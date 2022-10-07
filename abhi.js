@@ -44,3 +44,19 @@ abhi.then((value)=>{
 }).catch((err)=>{
     console.log("Error comes "+err)
 })
+
+// let abhishek = Promise.reject(6);
+// abhishek.then((value)=>{
+//     console.log(value)
+// }).catch((value)=>{
+//     console.log('Error comes in the after the script')
+// })
+
+// Here you can use the promise api to maniplute a task after all promises complete
+// Promise.race means this will print that promise that will resolves first 
+let abhishek = Promise.race([abhi]);
+abhishek.then((value)=>{
+    console.log(value)
+}).catch((value)=>{
+    console.log('Error comes in the after the script')
+})
