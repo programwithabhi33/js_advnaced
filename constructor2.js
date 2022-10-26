@@ -8,6 +8,7 @@ class Abhi{
     get name(){
         console.log(`This is the get method in the Abhi class ${this._name}`)
     }
+    // setter in the javascript class same as get but set the value 
     set name(name){
         this._name = name;
         console.log(`This is the set method in the Abhi class ${this._name}`)
@@ -31,5 +32,7 @@ class Abhi{
 
 let abhishek = new Abhi('abhishek')
 // abhishek.name; //You can direclty call or without curly braces because this is the get method in the class 
-abhishek.name = 'abhishek'; //You can direclty call or without curly braces because this is the get method in the class 
-abhishek.name
+abhishek.name = 'abhishek'; //You can direclty call or without curly braces because this is the set method in the class 
+
+// console.log('abhishek is the instanceof the class Abhi ' +abhishek instanceof Abhi)
+console.log(abhishek instanceof Abhi)
