@@ -4,8 +4,13 @@ class Abhi{
         this._name = name;
         // console.log(name)
     }
+    // Get method in the javascript class you can make it with the property name but you have to set the property or call the propert like _name 
     get name(){
         console.log(`This is the get method in the Abhi class ${this._name}`)
+    }
+    set name(name){
+        this._name = name;
+        console.log(`This is the set method in the Abhi class ${this._name}`)
     }
 }
 
@@ -25,4 +30,6 @@ class Abhi{
 // Abhi2.main2();
 
 let abhishek = new Abhi('abhishek')
-abhishek.name;
+// abhishek.name; //You can direclty call or without curly braces because this is the get method in the class 
+abhishek.name = 'abhishek'; //You can direclty call or without curly braces because this is the get method in the class 
+abhishek.name
