@@ -14,9 +14,10 @@ class Abhi{
 
 }
 class Abhi2 extends Abhi {
-    constructor(){
-        console.log("This is the constroctor of the Abhi2 class")
-    }
+    // When you have your own constructor when you need parent constructor you must call the parent constructor with the super method
+    // constructor(){
+    //     console.log("This is the constroctor of the Abhi2 class")
+    // }
    another_function(){
     console.log("this is the another function in the Abhi2 class")
    }
