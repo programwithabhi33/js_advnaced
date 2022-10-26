@@ -11,7 +11,7 @@ class Abhi2 extends Abhi{
     constructor(name){
         // console.log(name)
         super(name)
-        // super()
+        // super() Note:- You have to call the super class constructo before access the this keyword 
     }
 }
 let abhishek = new Abhi2('abhishek');
