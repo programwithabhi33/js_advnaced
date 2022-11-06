@@ -21,4 +21,5 @@ let obj2 = {
 }
 
 module.exports = obj; // This is how you can export the module in the common js
-module.exports = {obj,obj2}; // This is how you can export multiple objects in the common js
+module.exports  = {obj,obj2}; // This is how you can export multiple objects in the common js,this syntax same as below line
+// module.exports = {obj:obj,obj2:obj2}; 
